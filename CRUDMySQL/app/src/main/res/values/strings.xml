@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="posisi">
+    <item>bendahara</item>
+    <item>sekretaris</item>
+    <item>kepala bagian</item>
+    <item>kepala bidang</item>
+    </string-array>
+</resources>

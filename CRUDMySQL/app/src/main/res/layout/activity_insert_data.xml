@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#F5F5DC">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.scwang.wave.MultiWaveHeader
+        app:mwhStartColor="@color/gg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/wave_header">
+    </com.scwang.wave.MultiWaveHeader>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/wave_header"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilid">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIP"
+            android:id="@+id/inp_nip"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilid"
+        android:id="@+id/tilnama">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:id="@+id/inp_nama"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tiljumlah"
+        android:layout_below="@id/tilnama">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Posisi"
+            android:id="@+id/inp_posisi"/>
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/tiljumlah"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilharga">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gaji"
+            android:id="@+id/inp_gaji"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilharga"
+        android:id="@+id/tilstatus">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"
+            android:id="@+id/inp_alamat"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tilstatus"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#708090"
+            android:text="Batal"
+            android:id="@+id/btn_cancel"/>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#708090"
+            android:text="Simpan"
+            android:id="@+id/btn_simpan"/>
+    </LinearLayout>
+        <com.scwang.wave.MultiWaveHeader
+            app:mwhStartColor="@color/hhh"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/wave_footer"
+            android:scaleY="-1"
+            android:layout_alignParentBottom="true">
+        </com.scwang.wave.MultiWaveHeader>
+    </RelativeLayout>
+</LinearLayout>
